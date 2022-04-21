@@ -1,16 +1,35 @@
-blue-button-util
+Blue Button Utility
 ================
 
 Common utility methods for Amida-Tech repositories
 
-[![NPM](https://nodei.co/npm/blue-button-util.png)](https://nodei.co/npm/blue-button-util/)
+[![NPM](https://nodei.co/npm/@amida-tech/blue-button-util.png)](https://nodei.co/npm/@amida-tech/blue-button-util/)
 
 [![Build Status](https://travis-ci.org/amida-tech/blue-button-util.svg)](https://travis-ci.org/amida-tech/blue-button-util)
 [![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button-util/badge.png)](https://coveralls.io/r/amida-tech/blue-button-util)
 
 This library provides common Javascript utilities that are used in other Amida-Tech libraries.
 
-##Utilities
+## Quick up and running guide
+
+### Prerequisites
+
+- Node.js (v14.19+) and NPM
+- Grunt.js
+
+```
+# Install dependencies
+npm i
+
+# Install grunt
+npm i -g grunt
+
+# Test
+grunt
+
+```
+
+## Utilities
 
 You can install using [npm](https://www.npmjs.com) and  `require` to use in [node.js](https://nodejs.org/)
 ```js
@@ -35,8 +54,7 @@ The following methods are provided
 
 Provides utility methods for objects.
 
-<a name="object.exists" />
-####exists(obj)
+### `exists(obj)`
 
 Checks if `obj` is not `undefined` or `null`
 ```js
@@ -53,21 +71,20 @@ console.log(r2); // true
 
 Provides utility methods that modify an object.
 
-<a name="objectset.compact" />
-####objectset.compact(obj)
+### `objectset.compact(obj)`
 
 Recursively removes all `null` and `undefined` values from `obj`.  No special handling is done for resulting empty objects or arrays
 ```js
 var obj = {
-    a: 1,
-    b: null,
-    c: {
-        d: undefined,
-        e: 4
-    },
-    f: {
-        g: null
-    }
+  a: 1,
+  b: null,
+  c: {
+    d: undefined,
+    e: 4
+  },
+  f: {
+    g: null
+  }
 };
 
 obs.compact(obj);
@@ -77,8 +94,7 @@ console.log(obj); // {a: 1, c:{e:4}, f:{}}
 
 Provides utility methods that modify an array.
 
-<a name="arrayset.append" />
-#### append(arr, arrToAppend)
+### `append(arr, arrToAppend)`
 
 Appends `arrToAppend` elements to `arr`
 ```js
@@ -92,8 +108,7 @@ console.log(arr); // ['a', 'b', 'c', 'd'];
 
 Provides conversion methods to/from [blue-button-model](https://github.com/amida-tech/blue-button-model) datetimes from/to ISO datetimes.
 
-<a name="datetime.dateToModel" />
-#### datetime.dateToModel(d)
+### `datetime.dateToModel(d)`
 
 Converts ISO date `d` to [blue-button-model](https://github.com/amida-tech/blue-button-model) datetime
 ```js
@@ -108,8 +123,7 @@ console.log(r2); // {date: '2014-02-07T00:00:00.000Z', precision: 'day'}
 console.log(r3); // {date: '2014-02-07T00:00:00.000Z', precision: 'day'}
 ```
 
-<a name="datetime.dateTimeToModel" />
-#### datetime.dateTimeToModel(dt)
+### `datetime.dateTimeToModel(dt)`
 
 Converts ISO datetime `d` to [blue-button-model](https://github.com/amida-tech/blue-button-model) datetime
 ```js
@@ -125,26 +139,25 @@ console.log(r3); // {date: '2014-02-07T12:45:04.000Z', precision: 'second'}
 ```
 Millisecond piece is ignored even when it is not zero.
 
-<a name="datetime.modelToDate" />
-#### datetime.modelToDate(dt)
+### `datetime.modelToDate(dt)`
 
 Converts [blue-button-model](https://github.com/amida-tech/blue-button-model) datetime `dt` to ISO date
 ```js
 var r0 = dtt.modelToDate({
-    date: '2014-01-01T00:00:00.000Z',
-    precision: 'year'
+  date: '2014-01-01T00:00:00.000Z',
+  precision: 'year'
 });
 var r1 = dtt.modelToDate({
-    date: '2014-02-01T00:00:00.000Z',
-    precision: 'month'
+  date: '2014-02-01T00:00:00.000Z',
+  precision: 'month'
 });
 var r2 = dtt.modelToDate({
-    date: '2014-02-07T00:00:00.000Z',
-    precision: 'day'
+  date: '2014-02-07T00:00:00.000Z',
+  precision: 'day'
 });
 var r3 = dtt.modelToDate({
-    date: '2014-02-07T12:45:04.000Z',
-    precision: 'second'
+  date: '2014-02-07T12:45:04.000Z',
+  precision: 'second'
 });
 
 console.log(r0); // '2014'
@@ -153,8 +166,7 @@ console.log(r2); // '2014-02-07'
 console.log(r3); // '2014-02-07'
 ```
 
-<a name="datetime.modelToDateTime" />
-#### datetime.modelToDateTime(dt)
+### `datetime.modelToDateTime(dt)`
 
 Converts [blue-button-model](https://github.com/amida-tech/blue-button-model) datetime `dt` to ISO datetime
 ```js

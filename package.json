@@ -1,51 +1,52 @@
 {
-    "name": "blue-button-util",
-    "version": "1.6.0-beta.1",
-    "description": "Common methods for Amida-Tech repos",
-    "main": "./index.js",
-    "directories": {
-        "lib": "lib"
+  "name": "@amida-tech/blue-button-util",
+  "version": "1.6.1",
+  "description": "Common methods for Amida-Tech repos",
+  "main": "./index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "grunt run:jest",
+    "verify": "grunt"
+  },
+  "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
+  "contributors": [
+    {
+      "name": "Matthew McCall",
+      "email": "matt@amida-tech.com"
     },
-    "scripts": {
-        "test": "grunt mocha",
-        "verify": "grunt"
-    },
-    "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-    "contributors": [{
-        "name": "Matthew McCall",
-        "email": "matt@amida-tech.com"
-    }, {
-        "name": "Afsin Ustundag",
-        "email": "afsin.ustundag@us.pwc.com"
-    }],
-    "license": "Apache-2.0",
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "dependencies": {
-        "moment": "^2.10.3"
-    },
-    "devDependencies": {
-        "chai": "^3.0.0",
-        "grunt": "^0.4.5",
-        "grunt-contrib-jshint": "^0.11.2",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-jsbeautifier": "^0.2.10",
-        "grunt-mocha-test": "^0.12.7",
-        "grunt-shell": "^1.1.2",
-        "mocha": "^2.2.5"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/amida-tech/blue-button-util.git"
-    },
-    "keywords": [
-        "bluebutton",
-        "blue-button",
-        "model"
-    ],
-    "bugs": {
-        "url": "https://github.com/amida-tech/blue-button-util/issues"
-    },
-    "homepage": "https://github.com/amida-tech/blue-button-util"
+    {
+      "name": "Afsin Ustundag",
+      "email": "afsin.ustundag@us.pwc.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 14.19.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.2",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-run": "^0.8.1",
+    "jest": "^27.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/blue-button-util.git"
+  },
+  "keywords": [
+    "bluebutton",
+    "blue-button",
+    "utility"
+  ],
+  "bugs": {
+    "url": "https://github.com/amida-tech/blue-button-util/issues"
+  },
+  "homepage": "https://github.com/amida-tech/blue-button-util"
 }
