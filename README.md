@@ -33,7 +33,7 @@ grunt
 
 You can install using [npm](https://www.npmjs.com) and  `require` to use in [node.js](https://nodejs.org/)
 ```js
-var bbu = require('blue-button-util');
+var bbu = require('@amida-tech/blue-button-util');
 
 var ob = bbu.object;         // object library
 var obs = bbu.object;        // objectset library

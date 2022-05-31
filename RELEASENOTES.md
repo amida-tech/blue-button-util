@@ -1,5 +1,9 @@
 # blue-button-util Release Notes
 
+## 1.6.2 - May 31, 2022
+
+- Patch update: GHSA-rm36-94g8-835r - Race Condition in Grunt
+
 ## 1.6.0 - TBD
 
 - jsonpath library is moved to new package jsonave.

@@ -1,6 +1,6 @@
 {
   "name": "@amida-tech/blue-button-util",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Common methods for Amida-Tech repos",
   "main": "./index.js",
   "directories": {
@@ -23,13 +23,13 @@
   ],
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 14.19.1"
+    "node": ">= 14.19.3"
   },
   "dependencies": {
     "moment": "^2.29.3"
   },
   "devDependencies": {
-    "grunt": "^1.5.2",
+    "grunt": "^1.5.3",
     "grunt-contrib-jshint": "^3.2.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-jsbeautifier": "^0.2.13",
