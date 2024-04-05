@@ -1,18 +1,18 @@
 {
   "name": "@amida-tech/blue-button-util",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "Common methods for Amida-Tech repos",
   "main": "./index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "grunt run:jest",
+    "test": "grunt run:test",
+    "coverage": "grunt run:coverage",
     "verify": "grunt"
   },
   "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Matthew McCall",
       "email": "matt@amida-tech.com"
     },
